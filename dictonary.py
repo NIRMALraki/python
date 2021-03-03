@@ -35,13 +35,15 @@ class employee:
             print("v==",v)
             if k==name:
                 print(k.__dict__)
-
+'''creating object and accepting  the values'''
 e=employee()
 e.accept()
-
+'''displaying details'''
 print("displaying details")
 e.display()
-
+'''updating to dictionary'''
+d.update({e.name:e})
+'''saerching inside d dictionary'''
 print ("searching")
 e.search("nirmal")
 
