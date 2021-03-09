@@ -4,9 +4,8 @@ class calculation:
 
     def accept(self):
         n=int(input("enter the length of list"))
-        l3=[]
         for i in range(n):
-            l3.append(int(input("enter the elements")))
+            self.list1.append(int(input("enter the elements")))
         return l3
             
     def __add__(self,num2):
@@ -18,7 +17,7 @@ class calculation:
     def __sub__(self,num2):
         l3=[]
         for i in range(len(self.list1)):
-            l3.append(self.list1[i]+num2.list1[i])
+            l3.append(self.list1[i]-num2.list1[i])
         return l3    
 
     def __mul__(self,num2):
